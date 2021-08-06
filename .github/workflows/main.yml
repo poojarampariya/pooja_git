@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Repository Dispatch
-        uses: poojarampariya/repository-dispatch@v1
+        uses: poojarampariya/pooja_git@v1
         with:
           token: ${{ secrets.REPO_ACCESS_TOKEN }}
           repository: poojarampariya/simple-java-maven-app
