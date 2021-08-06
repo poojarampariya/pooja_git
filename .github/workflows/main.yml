@@ -8,8 +8,8 @@ jobs:
     steps:
       - uses: actions/checkout@v1
         name: Checkout
-      - name: Emit repository_dispatch
-        uses: poojarampariya/pooja_git@master
+#       - name: Emit repository_dispatch
+#         uses: poojarampariya/pooja_git@master
         with:
           # You should create a personal access token and store it in your repository
           token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
