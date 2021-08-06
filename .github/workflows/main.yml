@@ -6,6 +6,7 @@ jobs:
     name: Dispatch to `other-repo`
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v1
       - name: Emit repository_dispatch
         uses: poojarampariya/pooja_git@master
         with:
