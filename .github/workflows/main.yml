@@ -10,7 +10,7 @@ jobs:
       - name: Repository Dispatch
         uses: actions/checkout@v2
         with:
-          token: ${{ secrets.REPO_ACCESS_TOKEN }}
+          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
           repository: poojarampariya/simple-java-maven-app
           event-type: build-project
           client-payload: '{"submodule": "${{ github.repository }}"}'
